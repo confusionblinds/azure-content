@@ -33,8 +33,12 @@ Storage | Article explaining WASB and Data Lake Storeas storage options | 2 | Pe
 Performance  | Performance tuning guidelines for MapReduce applications 		| 1 |  Pending | [@blackmist](https://github.com/blackmist) | -
 Performance | Performance tuning guidelines for Spark clusters |1 | Pending | [@nitinme](https://github.com/nitinme) | -
 Development | non-interactive authentication with HDInsight .NET application |2| Writing | [@mumian](https://github.com/mumian) | [@matt1883](https://github.com/matt1883)
-
-
+Development | Hive has an HCatalog Streaming API to import data into Hive continuously. Hive document for this feature: https://cwiki.apache.org/confluence/display/Hive/Streaming+Data
+We do not have any documentation on the .NET SDK to implement this.
+|2 |  |  | -
+Development | Storm version 0.10 provides the ability to use this streaming API above - https://cwiki.apache.org/confluence/display/Hive/Streaming+Data
+The latest version of Azure HDInsight 3.3 Storm cluster supports Storm version 0.10.0 and hence should support the streaming API. There is no guidance to leverage this feature. Seems SCP.Net SDK didn’t update recently and I didn’t find a bolt template which seems support this new feature.
+|2 |  |  | -
 ## How to Give Feedback on the Backlog
 There are a few options to give feedback on the backlog:
 
